@@ -4,15 +4,15 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-title" content="×××©×¢××">
+<meta name="apple-mobile-web-app-title" content="הושעיה">
 <meta name="theme-color" content="#0A0F1E">
 <link rel="manifest" id="MF">
 <script>
-const mf={name:"×××©×¢×× ××× ×××× ××",short_name:"×××©×¢××",start_url:"./",display:"standalone",background_color:"#060B16",theme_color:"#0A0F1E",orientation:"portrait",icons:[{src:"data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230A0F1E'/><text y='.85em' font-size='75' x='12'>ð</text></svg>",sizes:"512x512",type:"image/svg+xml"}]};
+const mf={name:"הושעיה אמן בלונים",short_name:"הושעיה",start_url:"./",display:"standalone",background_color:"#060B16",theme_color:"#0A0F1E",orientation:"portrait",icons:[{src:"data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230A0F1E'/><text y='.85em' font-size='75' x='12'>🎈</text></svg>",sizes:"512x512",type:"image/svg+xml"}]};
 document.getElementById('MF').href=URL.createObjectURL(new Blob([JSON.stringify(mf)],{type:'application/json'}));
 if('serviceWorker'in navigator){const sw=`const C='hosh-v1';self.addEventListener('install',e=>e.waitUntil(caches.open(C).then(c=>c.addAll(['./']))));self.addEventListener('fetch',e=>{if(e.request.method!=='GET')return;e.respondWith(caches.match(e.request).then(r=>r||fetch(e.request)));});`;navigator.serviceWorker.register(URL.createObjectURL(new Blob([sw],{type:'application/javascript'}))).catch(()=>{});}
 </script>
-<title>ð ×××©×¢×× â × ×××× ×¢×¡×§×</title>
+<title>🎈 הושעיה — ניהול עסקי</title>
 <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
 <style>
 :root{
@@ -26,7 +26,7 @@ body{font-family:'Heebo',sans-serif;background:var(--bg);color:var(--text);min-h
 body::before{content:'';position:fixed;inset:0;z-index:0;background:radial-gradient(ellipse 70% 50% at 10% 20%,rgba(59,130,246,.08) 0%,transparent 60%),radial-gradient(ellipse 60% 40% at 90% 80%,rgba(6,182,212,.06) 0%,transparent 60%);pointer-events:none}
 .app{position:relative;z-index:1;max-width:430px;margin:0 auto}
 
-/* ââ HEADER ââ */
+/* ── HEADER ── */
 .hdr{padding:13px 15px 10px;background:rgba(10,15,30,.95);backdrop-filter:blur(20px);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:40}
 .hdr-row{display:flex;justify-content:space-between;align-items:center}
 .logo{font-size:19px;font-weight:900}.logo .dot{color:var(--cyan)}
@@ -40,13 +40,13 @@ body::before{content:'';position:fixed;inset:0;z-index:0;background:radial-gradi
 .stat-l{font-size:9px;color:var(--muted);margin-top:2px}
 .stat.red .stat-n{color:var(--red)}.stat.green .stat-n{color:var(--green)}.stat.blue .stat-n{color:var(--blue)}
 
-/* ââ NAV ââ */
+/* ── NAV ── */
 .nav{display:flex;background:rgba(10,15,30,.9);backdrop-filter:blur(10px);border-bottom:1px solid var(--border);position:sticky;top:53px;z-index:35}
 .nt{flex:1;padding:10px 4px 12px;background:none;border:none;color:var(--muted);font-family:'Heebo',sans-serif;font-size:10px;font-weight:700;cursor:pointer;transition:all .2s;display:flex;flex-direction:column;align-items:center;gap:3px;border-bottom:2px solid transparent}
 .nt .ni{font-size:20px}
 .nt.on{color:var(--cyan);border-bottom-color:var(--cyan)}
 
-/* ââ SHARED ââ */
+/* ── SHARED ── */
 .sec{padding:14px}
 .card{background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:13px;margin-bottom:11px}
 .ct{font-size:10px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:1px;margin-bottom:9px}
@@ -68,7 +68,7 @@ body::before{content:'';position:fixed;inset:0;z-index:0;background:radial-gradi
 .st.ld{background:rgba(124,58,237,.15);color:var(--pur)}
 .tag{background:rgba(245,158,11,.15);color:var(--gold);border-radius:5px;padding:2px 7px;font-size:11px;font-weight:600}
 
-/* ââ QUOTE SPECIFIC ââ */
+/* ── QUOTE SPECIFIC ── */
 .qtbs{display:flex;gap:4px;background:var(--card);border-radius:9px;padding:3px;margin-bottom:12px}
 .qtb{flex:1;padding:8px 2px;border:none;border-radius:7px;font-family:'Heebo',sans-serif;font-size:11px;font-weight:700;cursor:pointer;background:transparent;color:var(--muted);transition:all .2s}
 .qtb.on{background:linear-gradient(135deg,var(--pur),var(--pink));color:#fff}
@@ -87,7 +87,7 @@ body::before{content:'';position:fixed;inset:0;z-index:0;background:radial-gradi
 @keyframes bn{0%,80%,100%{transform:translateY(0);opacity:.4}40%{transform:translateY(-5px);opacity:1}}
 @keyframes su{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
 
-/* ââ INVENTORY SPECIFIC ââ */
+/* ── INVENTORY SPECIFIC ── */
 .search-bar{display:flex;gap:7px;padding:9px 14px;background:rgba(10,15,30,.88);backdrop-filter:blur(10px);border-bottom:1px solid var(--border);position:sticky;top:105px;z-index:30}
 .inv-tabs{display:flex;gap:5px;padding:8px 14px;overflow-x:auto;scrollbar-width:none;background:rgba(10,15,30,.8);border-bottom:1px solid var(--border);position:sticky;top:155px;z-index:29}
 .inv-tabs::-webkit-scrollbar{display:none}
@@ -119,7 +119,7 @@ body::before{content:'';position:fixed;inset:0;z-index:0;background:radial-gradi
 .qt-btn:active{background:rgba(239,68,68,.2);border-color:var(--red);color:var(--red)}
 .hl{background:rgba(245,158,11,.35);border-radius:3px;padding:0 2px}
 
-/* ââ BOTTOM BAR (inventory) ââ */
+/* ── BOTTOM BAR (inventory) ── */
 .inv-bar{position:fixed;bottom:0;left:50%;transform:translateX(-50%);width:100%;max-width:430px;background:rgba(6,11,22,.97);border-top:1px solid var(--border);backdrop-filter:blur(20px);z-index:50;display:none;gap:6px;padding:9px 13px 17px}
 .inv-bar.show{display:flex}
 .ibb{flex:1;padding:11px 4px;border:none;border-radius:11px;font-family:'Heebo',sans-serif;font-size:12px;font-weight:700;cursor:pointer;transition:all .2s}
@@ -128,12 +128,12 @@ body::before{content:'';position:fixed;inset:0;z-index:0;background:radial-gradi
 .ibb.g{background:linear-gradient(135deg,#059669,var(--green));color:#fff}
 .ibb:active{transform:scale(.97)}
 
-/* ââ BOTTOM NAV ââ */
+/* ── BOTTOM NAV ── */
 .bnav{position:fixed;bottom:0;left:50%;transform:translateX(-50%);width:100%;max-width:430px;background:rgba(6,11,22,.97);border-top:1px solid var(--border);display:flex;backdrop-filter:blur(20px);z-index:51}
 .nb{flex:1;padding:9px 4px 13px;background:none;border:none;color:var(--muted);font-family:'Heebo',sans-serif;font-size:9px;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:2px}
 .nb .bic{font-size:21px}.nb.on{color:var(--cyan)}
 
-/* ââ MODALS ââ */
+/* ── MODALS ── */
 .overlay{position:fixed;inset:0;background:rgba(6,11,22,.9);backdrop-filter:blur(8px);z-index:200;display:flex;align-items:flex-end;opacity:0;pointer-events:none;transition:opacity .3s}
 .overlay.open{opacity:1;pointer-events:all}
 .sheet{width:100%;max-width:430px;margin:0 auto;background:var(--surface);border-radius:22px 22px 0 0;padding:19px 16px 36px;border:1px solid var(--border);transform:translateY(100%);transition:transform .3s cubic-bezier(.25,.46,.45,.94)}
@@ -166,8 +166,8 @@ body::before{content:'';position:fixed;inset:0;z-index:0;background:radial-gradi
 <div class="hdr">
   <div class="hdr-row">
     <div>
-      <div class="logo">ð ×××©×¢××<span class="dot"> â</span></div>
-      <div class="logo-sub">× ×××× ×¢×¡×§× | 050-5918734</div>
+      <div class="logo">🎈 הושעיה<span class="dot"> ●</span></div>
+      <div class="logo-sub">ניהול עסקי | 050-5918734</div>
     </div>
     <div style="text-align:left">
       <div class="ver">v1.0</div>
@@ -175,138 +175,138 @@ body::before{content:'';position:fixed;inset:0;z-index:0;background:radial-gradi
     </div>
   </div>
   <div class="inv-stats" id="INV_STATS" style="display:none">
-    <div class="stat blue"><div class="stat-n" id="STOTAL">0</div><div class="stat-l">×¤×¨××××</div></div>
-    <div class="stat red"><div class="stat-n" id="SMISSING">0</div><div class="stat-l">××¡×¨××</div></div>
-    <div class="stat green"><div class="stat-n" id="SOK">0</div><div class="stat-l">×ª×§×× ××</div></div>
+    <div class="stat blue"><div class="stat-n" id="STOTAL">0</div><div class="stat-l">פריטים</div></div>
+    <div class="stat red"><div class="stat-n" id="SMISSING">0</div><div class="stat-l">חסרים</div></div>
+    <div class="stat green"><div class="stat-n" id="SOK">0</div><div class="stat-l">תקינים</div></div>
   </div>
 </div>
 
 <!-- NAV -->
 <div class="nav">
-  <button class="nt on" id="NT0" onclick="sw(0)"><span class="ni">ð°</span>××¦×¢××ª</button>
-  <button class="nt" id="NT1" onclick="sw(1)"><span class="ni">ð¦</span>××××</button>
+  <button class="nt on" id="NT0" onclick="sw(0)"><span class="ni">💰</span>הצעות</button>
+  <button class="nt" id="NT1" onclick="sw(1)"><span class="ni">📦</span>מלאי</button>
 </div>
 
-<!-- ââââââââ QUOTES TAB ââââââââ -->
+<!-- ════════ QUOTES TAB ════════ -->
 <div id="T0" class="sec">
   <div class="qtbs">
-    <button class="qtb on" id="QT0" onclick="sqt(0)">ð ××¦×¢×</button>
-    <button class="qtb" id="QT1" onclick="sqt(1)">ð¬ ×©×××</button>
-    <button class="qtb" id="QT2" onclick="sqt(2)">ð ×××¡×××¨××</button>
+    <button class="qtb on" id="QT0" onclick="sqt(0)">📋 הצעה</button>
+    <button class="qtb" id="QT1" onclick="sqt(1)">💬 שיחה</button>
+    <button class="qtb" id="QT2" onclick="sqt(2)">📁 היסטוריה</button>
   </div>
 
   <!-- Quote form -->
   <div id="QQ0">
     <div class="card">
-      <div class="ct">×¤×¨×× ××§××</div>
-      <label class="lbl">×©× ××§××</label>
-      <input class="inp" id="QCN" placeholder="××©×¨×× ××©×¨×××" oninput="qcalc()">
-      <label class="lbl">×××¤××</label>
+      <div class="ct">פרטי לקוח</div>
+      <label class="lbl">שם לקוח</label>
+      <input class="inp" id="QCN" placeholder="ישראל ישראלי" oninput="qcalc()">
+      <label class="lbl">טלפון</label>
       <input class="inp" id="QCP" placeholder="050-0000000" type="tel">
-      <label class="lbl">×¡×× ×××¨××¢</label>
+      <label class="lbl">סוג אירוע</label>
       <select class="sel" id="QET" style="margin-top:3px" onchange="qcalc()">
-        <option value="">×××¨...</option>
-        <option>××¨××ª ××××</option><option>××¨/××ª ××¦×××</option><option>××× ×××××ª</option>
-        <option>××ª×× ×</option><option>×§×××× ×/×××ª ×¡×¤×¨</option><option>×¢×××ª×/×××¡×</option><option>×××¨</option>
+        <option value="">בחר...</option>
+        <option>ברית מילה</option><option>בר/בת מצווה</option><option>יום הולדת</option>
+        <option>חתונה</option><option>קייטנה/בית ספר</option><option>עמותה/מוסד</option><option>אחר</option>
       </select>
-      <label class="lbl">×ª××¨×× ×××¨××¢</label>
+      <label class="lbl">תאריך אירוע</label>
       <input class="inp" id="QED" type="date" style="margin-top:3px" onchange="qcalc()">
-      <label class="lbl">××¨××§ (×§"× ×××××× ×××)</label>
+      <label class="lbl">מרחק (ק"מ לכיוון אחד)</label>
       <input class="inp" id="QDIST" type="number" value="0" min="0" oninput="qcalc()" style="margin-top:3px">
       <div class="trow">
-        <span style="font-size:13px">ðï¸ ×ª××©×/×ª ×××ª ×××××</span>
+        <span style="font-size:13px">🏘️ תושב/ת בית חוגלה</span>
         <div id="QTGL" class="tgl" onclick="qloc()" style="background:var(--border)">
           <div id="QTGLD" class="tgld" style="left:3px"></div>
         </div>
       </div>
     </div>
     <div class="card">
-      <div class="ct">×¤×¨××× ×××× ×</div>
-      <div id="QITEMS" style="color:var(--muted);font-size:12px;text-align:center;padding:6px">×××¥ + ××××¡××£ ×¤×¨××</div>
-      <button class="addb" onclick="qadd()">ï¼ ×××¡×£ ×¤×¨××</button>
+      <div class="ct">פריטי הזמנה</div>
+      <div id="QITEMS" style="color:var(--muted);font-size:12px;text-align:center;padding:6px">לחץ + להוסיף פריט</div>
+      <button class="addb" onclick="qadd()">＋ הוסף פריט</button>
     </div>
     <div class="tbar">
       <div>
-        <div style="color:var(--muted);font-size:12px">×¡×"× ××ª×©×××</div>
+        <div style="color:var(--muted);font-size:12px">סה"כ לתשלום</div>
         <div id="QTRVL" style="color:var(--muted);font-size:10px;margin-top:2px"></div>
       </div>
-      <div class="tam" id="QTOT">0 âª</div>
+      <div class="tam" id="QTOT">0 ₪</div>
     </div>
     <div style="display:flex;gap:8px;align-items:center;margin-bottom:10px">
-      <label style="font-size:12px;color:var(--muted);white-space:nowrap">×× ×× (%)</label>
+      <label style="font-size:12px;color:var(--muted);white-space:nowrap">הנחה (%)</label>
       <input class="inp" id="QDISC" type="number" min="0" max="100" value="0" style="width:70px" oninput="qcalc()">
       <span class="tag" id="QDAMT" style="display:none"></span>
     </div>
     <div id="QDRSN" style="display:none;margin-bottom:10px">
-      <label class="lbl">×¡×××ª ××× ××</label>
-      <input class="inp" id="QDRTXT" placeholder="×× ××ª ×ª××©×..." oninput="qcalc()" style="margin-top:3px">
+      <label class="lbl">סיבת ההנחה</label>
+      <input class="inp" id="QDRTXT" placeholder="הנחת תושב..." oninput="qcalc()" style="margin-top:3px">
     </div>
     <div class="card">
-      <div class="ct">×ª×¦××× ××§×××× â ×××××¡××¤</div>
+      <div class="ct">תצוגה מקדימה — וואטסאפ</div>
       <div class="prev" id="QPREV"></div>
-      <button class="btn gray" onclick="qcopy()" id="QCPB">ð ××¢×ª×§ ××××××¡××¤</button>
-      <button class="btn gr" onclick="qwa()">ð² ×©×× ××××××¡××¤</button>
+      <button class="btn gray" onclick="qcopy()" id="QCPB">📋 העתק לוואטסאפ</button>
+      <button class="btn gr" onclick="qwa()">📲 שלח בוואטסאפ</button>
     </div>
     <div class="card">
-      <div class="ct">ð§¾ ××¨××©×ª ×ª×©××× â Morning</div>
+      <div class="ct">🧾 דרישת תשלום — Morning</div>
       <div id="QIST" class="st" style="display:none"></div>
-      <button class="btn pu" onclick="qsend()">ð§¾ ×©×× ××¨××©×ª ×ª×©×××</button>
+      <button class="btn pu" onclick="qsend()">🧾 שלח דרישת תשלום</button>
     </div>
     <div class="card">
-      <div class="ct">ð ×××× Google</div>
+      <div class="ct">📅 יומן Google</div>
       <div id="QCST" class="st" style="display:none"></div>
-      <button class="btn gray" onclick="qCal()">ð ×©×××¨ ×××××</button>
+      <button class="btn gray" onclick="qCal()">📅 שמור ביומן</button>
     </div>
-    <button class="btn gray" onclick="qclear()" style="opacity:.6">ðï¸ × ×§× ××¦×¢×</button>
+    <button class="btn gray" onclick="qclear()" style="opacity:.6">🗑️ נקה הצעה</button>
   </div>
 
   <!-- Parse chat -->
   <div id="QQ1" style="display:none">
     <div class="card">
-      <div class="ct">ð¬ ××××§ ×©×××ª ×××××¡××¤</div>
-      <div style="font-size:12px;color:var(--muted);margin-bottom:10px;line-height:1.6">Gemini AI ×××× ××ª ×× ××¤×¨××× ×××¦××¨ ××¦×¢×ª ××××¨ ××××××××ª</div>
-      <textarea class="inp" id="QCHAT" style="resize:vertical;min-height:160px;line-height:1.65;margin-top:5px" placeholder="××××§ ××× ××ª ××©×××..."></textarea>
+      <div class="ct">💬 הדבק שיחת וואטסאפ</div>
+      <div style="font-size:12px;color:var(--muted);margin-bottom:10px;line-height:1.6">Gemini AI יזהה את כל הפרטים ויצור הצעת מחיר אוטומטית</div>
+      <textarea class="inp" id="QCHAT" style="resize:vertical;min-height:160px;line-height:1.65;margin-top:5px" placeholder="הדבק כאן את השיחה..."></textarea>
       <div id="QPST" class="st" style="display:none;margin-top:8px"></div>
-      <button class="btn pu" style="margin-top:10px" onclick="qparse()">ð¤ × ×ª× ×©××× ×¢× AI</button>
+      <button class="btn pu" style="margin-top:10px" onclick="qparse()">🤖 נתח שיחה עם AI</button>
     </div>
     <div id="QPD" style="display:none">
       <div class="card" style="border-color:rgba(16,185,129,.3);animation:su .4s ease">
-        <div class="ct" style="color:var(--green)">â ×××× ×××©×××</div>
+        <div class="ct" style="color:var(--green)">✅ זוהה מהשיחה</div>
         <div id="QPDTXT" style="font-size:13px;line-height:2"></div>
       </div>
-      <button class="btn gr" onclick="qapply()">â¡ï¸ ××¢××¨ ×××¦×¢×ª ××××¨</button>
-      <button class="btn gray" onclick="document.getElementById('QPD').style.display='none'">â ×××××</button>
+      <button class="btn gr" onclick="qapply()">➡️ העבר להצעת מחיר</button>
+      <button class="btn gray" onclick="document.getElementById('QPD').style.display='none'">✕ ביטול</button>
     </div>
   </div>
 
   <!-- History -->
   <div id="QQ2" style="display:none">
     <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px">
-      <div style="font-size:14px;font-weight:700">××¦×¢××ª ×××¨×× ××ª</div>
-      <button onclick="clearHist()" style="background:none;border:none;color:var(--muted);font-family:'Heebo',sans-serif;font-size:12px;cursor:pointer">× ×§× ×××</button>
+      <div style="font-size:14px;font-weight:700">הצעות אחרונות</div>
+      <button onclick="clearHist()" style="background:none;border:none;color:var(--muted);font-family:'Heebo',sans-serif;font-size:12px;cursor:pointer">נקה הכל</button>
     </div>
-    <div id="QHIST"><div style="text-align:center;color:var(--muted);padding:40px;font-size:13px">××× ×××¡×××¨×× ×¢××××</div></div>
+    <div id="QHIST"><div style="text-align:center;color:var(--muted);padding:40px;font-size:13px">אין היסטוריה עדיין</div></div>
   </div>
 </div>
 
-<!-- ââââââââ INVENTORY TAB ââââââââ -->
+<!-- ════════ INVENTORY TAB ════════ -->
 <div id="T1" style="display:none">
   <!-- Search bar -->
   <div class="search-bar">
-    <input class="inp" id="SRCH" placeholder="ð ××¤×©... (××¨×× 12, ×××××¨ ××...)" oninput="onSearch(this.value)" style="flex:1">
-    <button class="fltbtn" id="FLTBTN" onclick="toggleLowOnly()">â ï¸</button>
+    <input class="inp" id="SRCH" placeholder="🔍 חפש... (ורוד 12, מיילר לב...)" oninput="onSearch(this.value)" style="flex:1">
+    <button class="fltbtn" id="FLTBTN" onclick="toggleLowOnly()">⚠️</button>
   </div>
   <!-- Type tabs -->
   <div class="inv-tabs">
-    <button class="itab on" onclick="filterType('×××',this)">×××</button>
-    <button class="itab" onclick="filterType('×××§×¡',this)">ð ×××§×¡</button>
-    <button class="itab" onclick="filterType('×××××¨',this)">â¨ ×××××¨</button>
-    <button class="itab" onclick="filterType('×¦××¨××ª',this)">ð¶ ×¦××¨××ª</button>
-    <button class="itab" onclick="filterType('×××¨',this)">ð¦ ×××¨</button>
+    <button class="itab on" onclick="filterType('הכל',this)">הכל</button>
+    <button class="itab" onclick="filterType('לטקס',this)">🎈 לטקס</button>
+    <button class="itab" onclick="filterType('מיילר',this)">✨ מיילר</button>
+    <button class="itab" onclick="filterType('צורות',this)">🐶 צורות</button>
+    <button class="itab" onclick="filterType('אחר',this)">📦 אחר</button>
   </div>
   <!-- Content -->
   <div style="padding:13px" id="INV_CONTENT">
-    <div class="empty-state"><div class="ei">ð¦</div><p>××××× ×¨××§<br>×××¥ <strong>×××××</strong> ×× <strong>ï¼</strong></p></div>
+    <div class="empty-state"><div class="ei">📦</div><p>המלאי ריק<br>לחץ <strong>ייבוא</strong> או <strong>＋</strong></p></div>
   </div>
 </div>
 
@@ -314,90 +314,90 @@ body::before{content:'';position:fixed;inset:0;z-index:0;background:radial-gradi
 
 <!-- Bottom nav -->
 <div class="bnav">
-  <button class="nb on" id="NB0" onclick="sw(0)"><span class="bic">ð°</span>××¦×¢××ª</button>
-  <button class="nb" id="NB1" onclick="sw(1)"><span class="bic">ð¦</span>××××</button>
+  <button class="nb on" id="NB0" onclick="sw(0)"><span class="bic">💰</span>הצעות</button>
+  <button class="nb" id="NB1" onclick="sw(1)"><span class="bic">📦</span>מלאי</button>
 </div>
 
 <!-- Inventory bottom bar -->
 <div class="inv-bar" id="INV_BAR">
-  <button class="ibb s" onclick="openImport()">ð¥ ×××××</button>
-  <button class="ibb p" onclick="openQuickTake()">â¡ ××§××ª×</button>
-  <button class="ibb s" onclick="openMissing()">â ï¸ ×××¡×¨××</button>
-  <button class="ibb g" onclick="exportWA()">ð² ×××××</button>
+  <button class="ibb s" onclick="openImport()">📥 ייבוא</button>
+  <button class="ibb p" onclick="openQuickTake()">⚡ לקחתי</button>
+  <button class="ibb s" onclick="openMissing()">⚠️ חוסרים</button>
+  <button class="ibb g" onclick="exportWA()">📲 יבואן</button>
 </div>
 
 <div class="toast" id="TOAST"></div>
 
-<!-- ââ ADD/EDIT MODAL ââ -->
+<!-- ══ ADD/EDIT MODAL ══ -->
 <div class="overlay" id="ADD_OV" onclick="if(event.target===this)closeAdd()">
   <div class="sheet">
     <div class="handle"></div>
-    <div class="sheet-title" id="ADD_TTL">â ×××¡×£ ×¤×¨××</div>
+    <div class="sheet-title" id="ADD_TTL">➕ הוסף פריט</div>
     <input type="hidden" id="EDIT_ID">
-    <input class="minp" id="ADD_NAME" placeholder="×©× ××¤×¨×× (×××©×: ×××§×¡ ××¨×× 12&quot;)">
+    <input class="minp" id="ADD_NAME" placeholder="שם הפריט (למשל: לטקס ורוד 12&quot;)">
     <select class="msel" id="ADD_TYPE">
-      <option value="×××§×¡">ð ×××§×¡</option><option value="×××××¨">â¨ ×××××¨</option>
-      <option value="×¦××¨××ª">ð¶ ×¦××¨××ª</option><option value="×××¨">ð¦ ×××¨</option>
+      <option value="לטקס">🎈 לטקס</option><option value="מיילר">✨ מיילר</option>
+      <option value="צורות">🐶 צורות</option><option value="אחר">📦 אחר</option>
     </select>
     <select class="msel" id="ADD_SIZE">
-      <option value='5"'>5 ××× ×¥×³</option><option value='12"' selected>12 ××× ×¥×³</option>
-      <option value='14"'>14 ××× ×¥×³</option><option value='32"'>32 ××× ×¥×³</option>
-      <option value='×× 18"'>×××××¨ ×× 18×´</option><option value='×¢××× 22"'>×××××¨ ×¢××× 22×´</option>
-      <option value='×¢××× 32"'>×××××¨ ×¢××× 32×´</option><option value='××¡×¤×¨'>×××××¨ ××¡×¤×¨</option>
-      <option value="×××">××× ××××</option>
+      <option value='5"'>5 אינץ׳</option><option value='12"' selected>12 אינץ׳</option>
+      <option value='14"'>14 אינץ׳</option><option value='32"'>32 אינץ׳</option>
+      <option value='לב 18"'>מיילר לב 18״</option><option value='עגול 22"'>מיילר עגול 22״</option>
+      <option value='עגול 32"'>מיילר עגול 32״</option><option value='מספר'>מיילר מספר</option>
+      <option value="ללא">ללא גודל</option>
     </select>
-    <input class="minp" id="ADD_COLOR" placeholder="×¦××¢ (××¨××, ××××, ×××...)">
+    <input class="minp" id="ADD_COLOR" placeholder="צבע (ורוד, כחול, זהב...)">
     <div style="display:flex;gap:8px;margin-bottom:9px">
-      <div style="flex:1"><div style="font-size:11px;color:var(--muted);margin-bottom:4px">××××ª</div><input class="minp" id="ADD_QTY" type="number" min="0" value="0" style="margin:0"></div>
-      <div style="flex:1"><div style="font-size:11px;color:var(--muted);margin-bottom:4px">××× ××××</div><input class="minp" id="ADD_MIN" type="number" min="0" value="10" style="margin:0"></div>
+      <div style="flex:1"><div style="font-size:11px;color:var(--muted);margin-bottom:4px">כמות</div><input class="minp" id="ADD_QTY" type="number" min="0" value="0" style="margin:0"></div>
+      <div style="flex:1"><div style="font-size:11px;color:var(--muted);margin-bottom:4px">מינימום</div><input class="minp" id="ADD_MIN" type="number" min="0" value="10" style="margin:0"></div>
     </div>
-    <button class="mbt p" onclick="saveItem()">ð¾ ×©×××¨</button>
-    <button class="mbt d" id="DEL_BTN" onclick="deleteItem()" style="display:none">ðï¸ ×××§ ×¤×¨××</button>
-    <button class="mbt s" onclick="closeAdd()">×××××</button>
+    <button class="mbt p" onclick="saveItem()">💾 שמור</button>
+    <button class="mbt d" id="DEL_BTN" onclick="deleteItem()" style="display:none">🗑️ מחק פריט</button>
+    <button class="mbt s" onclick="closeAdd()">ביטול</button>
   </div>
 </div>
 
-<!-- ââ IMPORT MODAL ââ -->
+<!-- ══ IMPORT MODAL ══ -->
 <div class="overlay" id="IMP_OV" onclick="if(event.target===this)closeImport()">
   <div class="sheet">
     <div class="handle"></div>
-    <div class="sheet-title">ð¥ ××××× ×¨×©×××</div>
-    <div style="font-size:12px;color:var(--muted);margin-bottom:10px;line-height:1.7">××××§ ×¨×©××× ××× ×¤××¨×× â AI ××××× ××××××××ª.<br><strong>×××××:</strong> ×××§×¡ ××¨×× 12 â 50 ×××³</div>
-    <textarea class="import-area" id="IMP_TEXT" placeholder="××××§ ×××..."></textarea>
+    <div class="sheet-title">📥 ייבוא רשימה</div>
+    <div style="font-size:12px;color:var(--muted);margin-bottom:10px;line-height:1.7">הדבק רשימה בכל פורמט — AI ימיין אוטומטית.<br><strong>דוגמה:</strong> לטקס ורוד 12 — 50 יח׳</div>
+    <textarea class="import-area" id="IMP_TEXT" placeholder="הדבק כאן..."></textarea>
     <input type="file" id="IMP_FILE" accept=".csv,.txt" style="display:none" onchange="handleFile(this)">
-    <button onclick="document.getElementById('IMP_FILE').click()" class="mbt s" style="margin-bottom:10px">ð ×××¨ ×§×××¥ CSV / TXT</button>
-    <button class="mbt p" onclick="importList()">ð¤ ×××× ××¡××¨</button>
-    <button class="mbt s" onclick="closeImport()">×××××</button>
+    <button onclick="document.getElementById('IMP_FILE').click()" class="mbt s" style="margin-bottom:10px">📎 בחר קובץ CSV / TXT</button>
+    <button class="mbt p" onclick="importList()">🤖 ייבא וסדר</button>
+    <button class="mbt s" onclick="closeImport()">ביטול</button>
   </div>
 </div>
 
-<!-- ââ MISSING MODAL ââ -->
+<!-- ══ MISSING MODAL ══ -->
 <div class="overlay" id="MISS_OV" onclick="if(event.target===this)closeMissing()">
   <div class="sheet" style="max-height:85vh;overflow-y:auto">
     <div class="handle"></div>
-    <div class="sheet-title">â ï¸ ×¨×©×××ª ×××¡×¨××</div>
+    <div class="sheet-title">⚠️ רשימת חוסרים</div>
     <div id="MISS_LIST"></div>
-    <button class="mbt p" onclick="copyMissing()" style="margin-top:8px">ð ××¢×ª×§ ××××××</button>
-    <button class="mbt s" onclick="closeMissing()">×¡×××¨</button>
+    <button class="mbt p" onclick="copyMissing()" style="margin-top:8px">📋 העתק ליבואן</button>
+    <button class="mbt s" onclick="closeMissing()">סגור</button>
   </div>
 </div>
 
-<!-- ââ QUICK TAKE MODAL ââ -->
+<!-- ══ QUICK TAKE MODAL ══ -->
 <div class="overlay" id="QT_OV" onclick="if(event.target===this)closeQT()">
   <div class="sheet">
     <div class="handle"></div>
-    <div class="sheet-title">â¡ ×× ××§××ª×?</div>
-    <div style="font-size:12px;color:var(--muted);margin-bottom:10px">××¤×© ×¤×¨×× â ×××¥ ××× ××§××ª</div>
-    <input class="minp" id="QT_SRCH" placeholder="ð ××¤×© ×¤×¨××..." oninput="qtSearch(this.value)">
+    <div class="sheet-title">⚡ מה לקחתי?</div>
+    <div style="font-size:12px;color:var(--muted);margin-bottom:10px">חפש פריט → לחץ כמה לקחת</div>
+    <input class="minp" id="QT_SRCH" placeholder="🔍 חפש פריט..." oninput="qtSearch(this.value)">
     <div id="QT_LIST" style="max-height:300px;overflow-y:auto"></div>
-    <button class="mbt s" onclick="closeQT()" style="margin-top:10px">×¡×××¨</button>
+    <button class="mbt s" onclick="closeQT()" style="margin-top:10px">סגור</button>
   </div>
 </div>
 
 <script>
-// ââââââââââââââââââââââââââââââââââââ
+// ════════════════════════════════════
 // NAVIGATION
-// ââââââââââââââââââââââââââââââââââââ
+// ════════════════════════════════════
 let currentTab = 0;
 function sw(i) {
   currentTab = i;
@@ -413,9 +413,9 @@ function sw(i) {
   if(i===1) { renderInv(); updateStats(); }
 }
 
-// ââââââââââââââââââââââââââââââââââââ
+// ════════════════════════════════════
 // SHARED TOAST
-// ââââââââââââââââââââââââââââââââââââ
+// ════════════════════════════════════
 function toast(msg, type='') {
   const t = document.getElementById('TOAST');
   t.textContent = msg;
@@ -423,21 +423,21 @@ function toast(msg, type='') {
   setTimeout(() => t.className = 'toast', 3000);
 }
 
-// ââââââââââââââââââââââââââââââââââââ
-// ââ QUOTES ââ
-// ââââââââââââââââââââââââââââââââââââ
+// ════════════════════════════════════
+// ── QUOTES ──
+// ════════════════════════════════════
 const WORKER_URL='https://hoshaya-worker.hoshaya.workers.dev';
 
 const PL={
-  "×©×××× ××¡××¡×":{b:30},"×©×××× ×××¨××":{b:70},"×©×××× ×¤×¨×××××":{b:120},
-  "×××©××§ ×××× ××":{b:800,l:600},"×××©××§ ×××× ×× ×¢× ××××ª":{b:1200,l:900},
-  "×©×¢×¨ ×× ××¡×":{b:600,l:400},"×¢××× ×××× ××":{b:150},"×¤×× ×ª ×¦×××× ××××":{b:1200},
-  "××¡××¨×ª":{b:400},"××¨ ×××× ×× ×©×¢×":{b:800},"××¨ ×××× ×× 2+ ×©×¢××ª":{b:600},
-  "××¤×¢×× ×©× ×":{b:600},"×§×¨× ×× ××××¢×× 60":{b:1300},"×§×¨× ×× ××××¢×× 100":{b:2100},
-  "×¢××¦×× ×××¨ Standard":{b:500},"×¢××¦×× ×××¨ Deluxe":{b:750},"×¢××¦×× ×××¨ VIP":{b:1000},
-  "×¡×× ×":{b:700},"××¤××© ×§××¨×¡":{b:400},"×××× ×××§×¡ ×××××":{b:5},
-  '×××××¨ ×× 18" ×××××':{b:10},'×××××¨ ×× 18" + ×××ª××':{b:20},
-  '×××××¨ ×× 18" + ×ª××× ×':{b:40},'×××××¨ 22"':{b:25},"×××××¨ ××¡×¤×¨ + ××¡××¡":{b:15}
+  "שולחן בסיסי":{b:30},"שולחן מורחב":{b:70},"שולחן פרימיום":{b:120},
+  "חישוק בלונים":{b:800,l:600},"חישוק בלונים עם במות":{b:1200,l:900},
+  "שער כניסה":{b:600,l:400},"עמוד בלונים":{b:150},"פינת צילום מלאה":{b:1200},
+  "מסגרת":{b:400},"בר בלונים שעה":{b:800},"בר בלונים 2+ שעות":{b:600},
+  "מפעיל שני":{b:600},"קרנבל כובעים 60":{b:1300},"קרנבל כובעים 100":{b:2100},
+  "עיצוב חדר Standard":{b:500},"עיצוב חדר Deluxe":{b:750},"עיצוב חדר VIP":{b:1000},
+  "סדנה":{b:700},"מפגש קורס":{b:400},"בלון לטקס הליום":{b:5},
+  'מיילר לב 18" הליום':{b:10},'מיילר לב 18" + כיתוב':{b:20},
+  'מיילר לב 18" + תמונה':{b:40},'מיילר 22"':{b:25},"מיילר מספר + בסיס":{b:15}
 };
 
 let qIt=[],qLoc=false,qHist=[],pQ=null;
@@ -454,15 +454,15 @@ function qadd(){
   const c=document.getElementById('QITEMS');
   if(c.style.textAlign==='center')c.innerHTML='';
   const id=Date.now(); qIt.push({id,name:'',qty:1,price:0});
-  const opts=Object.keys(PL).map(k=>`<option value="${k}">${k} â ${PL[k].b}âª</option>`).join('');
+  const opts=Object.keys(PL).map(k=>`<option value="${k}">${k} — ${PL[k].b}₪</option>`).join('');
   const row=document.createElement('div'); row.className='irow'; row.id=`QR${id}`;
-  row.innerHTML=`<select style="flex:2;background:transparent;border:none;color:var(--text);font-family:'Heebo',sans-serif;font-size:12px;outline:none;direction:rtl" onchange="qun(${id},this.value)"><option value="">×××¨ ×¤×¨××...</option>${opts}</select><input type="number" min="1" value="1" style="width:40px;background:transparent;border:none;color:var(--text);text-align:center;font-family:'Heebo',sans-serif;font-size:12px;outline:none" onchange="quq(${id},+this.value)"><span id="QP${id}" style="color:var(--gold);font-weight:700;font-size:12px;min-width:44px;text-align:left"></span><button onclick="qrm(${id})" style="background:none;border:none;color:var(--red);cursor:pointer;font-size:15px">â</button>`;
+  row.innerHTML=`<select style="flex:2;background:transparent;border:none;color:var(--text);font-family:'Heebo',sans-serif;font-size:12px;outline:none;direction:rtl" onchange="qun(${id},this.value)"><option value="">בחר פריט...</option>${opts}</select><input type="number" min="1" value="1" style="width:40px;background:transparent;border:none;color:var(--text);text-align:center;font-family:'Heebo',sans-serif;font-size:12px;outline:none" onchange="quq(${id},+this.value)"><span id="QP${id}" style="color:var(--gold);font-weight:700;font-size:12px;min-width:44px;text-align:left"></span><button onclick="qrm(${id})" style="background:none;border:none;color:var(--red);cursor:pointer;font-size:15px">✕</button>`;
   c.appendChild(row); qcalc();
 }
-function qun(id,name){const it=qIt.find(i=>i.id===id);if(it){it.name=name;it.price=pfr(name,qLoc)*it.qty;}const el=document.getElementById(`QP${id}`);if(el)el.textContent=it&&it.price?it.price+'âª':'';qcalc();}
-function quq(id,qty){const it=qIt.find(i=>i.id===id);if(it){it.qty=qty;it.price=pfr(it.name,qLoc)*qty;}const el=document.getElementById(`QP${id}`);if(el)el.textContent=it&&it.price?it.price+'âª':'';qcalc();}
-function qrm(id){qIt=qIt.filter(i=>i.id!==id);const r=document.getElementById(`QR${id}`);if(r)r.remove();if(!qIt.length){const c=document.getElementById('QITEMS');c.innerHTML='×××¥ + ××××¡××£ ×¤×¨××';c.style.textAlign='center';}qcalc();}
-function qloc(){qLoc=!qLoc;const tg=document.getElementById('QTGL'),dot=document.getElementById('QTGLD');tg.style.background=qLoc?'var(--pur)':'var(--border)';dot.style.left=qLoc?'auto':'3px';dot.style.right=qLoc?'3px':'auto';if(qLoc){document.getElementById('QDISC').value=25;document.getElementById('QDRTXT').value='×× ××ª ×ª××©×/×ª ×××ª ×××××';}else{document.getElementById('QDISC').value=0;document.getElementById('QDRTXT').value='';}qIt=qIt.map(i=>({...i,price:pfr(i.name,qLoc)*i.qty}));qIt.forEach(i=>{const el=document.getElementById(`QP${i.id}`);if(el)el.textContent=i.price?i.price+'âª':'';});qcalc();}
+function qun(id,name){const it=qIt.find(i=>i.id===id);if(it){it.name=name;it.price=pfr(name,qLoc)*it.qty;}const el=document.getElementById(`QP${id}`);if(el)el.textContent=it&&it.price?it.price+'₪':'';qcalc();}
+function quq(id,qty){const it=qIt.find(i=>i.id===id);if(it){it.qty=qty;it.price=pfr(it.name,qLoc)*qty;}const el=document.getElementById(`QP${id}`);if(el)el.textContent=it&&it.price?it.price+'₪':'';qcalc();}
+function qrm(id){qIt=qIt.filter(i=>i.id!==id);const r=document.getElementById(`QR${id}`);if(r)r.remove();if(!qIt.length){const c=document.getElementById('QITEMS');c.innerHTML='לחץ + להוסיף פריט';c.style.textAlign='center';}qcalc();}
+function qloc(){qLoc=!qLoc;const tg=document.getElementById('QTGL'),dot=document.getElementById('QTGLD');tg.style.background=qLoc?'var(--pur)':'var(--border)';dot.style.left=qLoc?'auto':'3px';dot.style.right=qLoc?'3px':'auto';if(qLoc){document.getElementById('QDISC').value=25;document.getElementById('QDRTXT').value='הנחת תושב/ת בית חוגלה';}else{document.getElementById('QDISC').value=0;document.getElementById('QDRTXT').value='';}qIt=qIt.map(i=>({...i,price:pfr(i.name,qLoc)*i.qty}));qIt.forEach(i=>{const el=document.getElementById(`QP${i.id}`);if(el)el.textContent=i.price?i.price+'₪':'';});qcalc();}
 function qcalc(){
   const tot=qIt.reduce((s,i)=>s+(i.price||0),0);
   const dist=+(document.getElementById('QDIST')?.value||0)||0;
@@ -470,17 +470,17 @@ function qcalc(){
   const dp=+(document.getElementById('QDISC')?.value||0)||0;
   const da=Math.round(tot*dp/100);
   const grand=tot-da+trv;
-  document.getElementById('QTOT').textContent=grand+' âª';
-  const tv=document.getElementById('QTRVL');if(tv)tv.textContent=trv>0?`×××× × ×¡××¢××ª ${trv}âª`:'';
-  const da_el=document.getElementById('QDAMT');if(da_el){da_el.style.display=dp>0?'inline':'none';da_el.textContent=`-${da}âª`;}
+  document.getElementById('QTOT').textContent=grand+' ₪';
+  const tv=document.getElementById('QTRVL');if(tv)tv.textContent=trv>0?`כולל נסיעות ${trv}₪`:'';
+  const da_el=document.getElementById('QDAMT');if(da_el){da_el.style.display=dp>0?'inline':'none';da_el.textContent=`-${da}₪`;}
   const dr=document.getElementById('QDRSN');if(dr)dr.style.display=dp>0?'block':'none';
   document.getElementById('QPREV').textContent=waT();
 }
 function waT(){
-  const n=document.getElementById('QCN')?.value||'×××§××',ev=document.getElementById('QET')?.value||'××××¨××¢',ed=document.getElementById('QED')?.value||'',ds=ed?new Date(ed).toLocaleDateString('he-IL'):'',dist=+(document.getElementById('QDIST')?.value||0)||0,trv=dist>0?Math.round(dist*2*1.5):0,dp=+(document.getElementById('QDISC')?.value||0)||0,tot=qIt.reduce((s,i)=>s+(i.price||0),0),da=Math.round(tot*dp/100),grand=tot-da+trv,dr=document.getElementById('QDRTXT')?.value||`×× ×× ${dp}%`,lines=qIt.filter(i=>i.name).map(i=>`â¢ ${i.name} Ã ${i.qty} â ${i.price}âª`).join('\n')||'â¢ (×× × ×××¨× ×¤×¨××××)',trvl=trv>0?`\nâ¢ × ×¡××¢××ª â ${trv}âª`:'',disc=dp>0?`\nð ${dr}: -${da}âª`:'';
-  return `×©××× ${n} ðð\n\n××¦×¢×ª ××××¨ ×¢×××¨ ${ev}${ds?' â '+ds:''}:\n\n${lines}${trvl}${disc}\n\n*×¡×"× ××ª×©×××: ${grand}âª*\n\n×ª×©××× ×-Bit / Paybox / ×¦'×§\nð 050-5918734 | ×××©×¢×× ××× ×××× ××`;
+  const n=document.getElementById('QCN')?.value||'הלקוח',ev=document.getElementById('QET')?.value||'האירוע',ed=document.getElementById('QED')?.value||'',ds=ed?new Date(ed).toLocaleDateString('he-IL'):'',dist=+(document.getElementById('QDIST')?.value||0)||0,trv=dist>0?Math.round(dist*2*1.5):0,dp=+(document.getElementById('QDISC')?.value||0)||0,tot=qIt.reduce((s,i)=>s+(i.price||0),0),da=Math.round(tot*dp/100),grand=tot-da+trv,dr=document.getElementById('QDRTXT')?.value||`הנחה ${dp}%`,lines=qIt.filter(i=>i.name).map(i=>`• ${i.name} × ${i.qty} — ${i.price}₪`).join('\n')||'• (לא נבחרו פריטים)',trvl=trv>0?`\n• נסיעות — ${trv}₪`:'',disc=dp>0?`\n🎁 ${dr}: -${da}₪`:'';
+  return `שלום ${n} 😊🎈\n\nהצעת מחיר עבור ${ev}${ds?' — '+ds:''}:\n\n${lines}${trvl}${disc}\n\n*סה"כ לתשלום: ${grand}₪*\n\nתשלום ב-Bit / Paybox / צ'ק\n📞 050-5918734 | הושעיה אמן בלונים`;
 }
-function qcopy(){navigator.clipboard.writeText(waT()).then(()=>{document.getElementById('QCPB').textContent='â ×××¢×ª×§!';setTimeout(()=>document.getElementById('QCPB').textContent='ð ××¢×ª×§ ××××××¡××¤',2000);});}
+function qcopy(){navigator.clipboard.writeText(waT()).then(()=>{document.getElementById('QCPB').textContent='✅ הועתק!';setTimeout(()=>document.getElementById('QCPB').textContent='📋 העתק לוואטסאפ',2000);});}
 function qwa(){
   const n=document.getElementById('QCN')?.value||'',ev=document.getElementById('QET')?.value||'',dist=+(document.getElementById('QDIST')?.value||0)||0,trv=dist>0?Math.round(dist*2*1.5):0,dp=+(document.getElementById('QDISC')?.value||0)||0,tot=qIt.reduce((s,i)=>s+(i.price||0),0),da=Math.round(tot*dp/100),grand=tot-da+trv;
   if(n&&grand>0){qHist=[{name:n,total:grand,evt:ev,date:new Date().toLocaleDateString('he-IL'),items:[...qIt]},...qHist].slice(0,100);saveHist();}
@@ -489,92 +489,92 @@ function qwa(){
 }
 async function qsend(){
   const n=document.getElementById('QCN')?.value||'',dist=+(document.getElementById('QDIST')?.value||0)||0,trv=dist>0?Math.round(dist*2*1.5):0,dp=+(document.getElementById('QDISC')?.value||0)||0,tot=qIt.reduce((s,i)=>s+(i.price||0),0),da=Math.round(tot*dp/100),grand=tot-da+trv;
-  if(!n){toast('â ï¸ × × ×××× ×©× ××§××','e');return;}if(grand<=0){toast('â ï¸ × × ××××¡××£ ×¤×¨××××','e');return;}
-  sQSt('ld','â³ ×©×××...');
+  if(!n){toast('⚠️ נא למלא שם לקוח','e');return;}if(grand<=0){toast('⚠️ נא להוסיף פריטים','e');return;}
+  sQSt('ld','⏳ שולח...');
   try{
     const inc=qIt.filter(i=>i.name&&i.price>0).map(i=>({description:i.name,quantity:i.qty,price:pfr(i.name,qLoc),vatType:0}));
-    if(trv>0)inc.push({description:'× ×¡××¢××ª',quantity:1,price:trv,vatType:0});
-    const invoice={description:document.getElementById('QET')?.value||'×©××¨××ª× ×××× ××',type:320,lang:'he',currency:'ILS',vatType:0,discount:dp||0,client:{name:n,phones:document.getElementById('QCP')?.value?[{phone:document.getElementById('QCP').value}]:[],add:true},income:inc,remarks:"×ª×©××× ×-Bit / Paybox / ×¦'×§\n×××©×¢×× ××× ×××× ×× | 050-5918734"};
+    if(trv>0)inc.push({description:'נסיעות',quantity:1,price:trv,vatType:0});
+    const invoice={description:document.getElementById('QET')?.value||'שירותי בלונים',type:320,lang:'he',currency:'ILS',vatType:0,discount:dp||0,client:{name:n,phones:document.getElementById('QCP')?.value?[{phone:document.getElementById('QCP').value}]:[],add:true},income:inc,remarks:"תשלום ב-Bit / Paybox / צ'ק\nהושעיה אמן בלונים | 050-5918734"};
     const dr=await fetch(`${WORKER_URL}/morning`,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({invoice})});
     const doc=await dr.json();
-    if(doc.id){sQSt('ok',`â × ×©××! ${doc.number||doc.id}`);qHist=[{name:n,total:grand,evt:document.getElementById('QET')?.value||'',date:new Date().toLocaleDateString('he-IL'),items:[...qIt]},...qHist].slice(0,100);saveHist();}
-    else sQSt('er',`â ${doc.message||'×©××××'}`);
-  }catch(e){sQSt('er',`â ${e.message}`);}
+    if(doc.id){sQSt('ok',`✅ נשלח! ${doc.number||doc.id}`);qHist=[{name:n,total:grand,evt:document.getElementById('QET')?.value||'',date:new Date().toLocaleDateString('he-IL'),items:[...qIt]},...qHist].slice(0,100);saveHist();}
+    else sQSt('er',`❌ ${doc.message||'שגיאה'}`);
+  }catch(e){sQSt('er',`❌ ${e.message}`);}
 }
 function sQSt(t,m){const el=document.getElementById('QIST');el.className=`st ${t}`;el.textContent=m;el.style.display='block';}
 async function qCal(){
-  const n=document.getElementById('QCN')?.value||'',ev=document.getElementById('QET')?.value||'×©××¨××ª× ×××× ××',ed=document.getElementById('QED')?.value||'';
-  if(!ed){sCalSt('er','â ï¸ × × ×××××¨ ×ª××¨××');return;}
+  const n=document.getElementById('QCN')?.value||'',ev=document.getElementById('QET')?.value||'שירותי בלונים',ed=document.getElementById('QED')?.value||'';
+  if(!ed){sCalSt('er','⚠️ נא לבחור תאריך');return;}
   const dist=+(document.getElementById('QDIST')?.value||0)||0,trv=dist>0?Math.round(dist*2*1.5):0,dp=+(document.getElementById('QDISC')?.value||0)||0,tot=qIt.reduce((s,i)=>s+(i.price||0),0),grand=tot-Math.round(tot*dp/100)+trv;
-  const lines=qIt.filter(i=>i.name).map(i=>`â¢ ${i.name} Ã ${i.qty} â ${i.price}âª`).join('\n');
-  const desc=`××§××: ${n}\n×××¤××: ${document.getElementById('QCP')?.value||''}\n\n${lines}\n\n×¡×"×: ${grand}âª`;
+  const lines=qIt.filter(i=>i.name).map(i=>`• ${i.name} × ${i.qty} — ${i.price}₪`).join('\n');
+  const desc=`לקוח: ${n}\nטלפון: ${document.getElementById('QCP')?.value||''}\n\n${lines}\n\nסה"כ: ${grand}₪`;
   const s=new Date(ed);s.setHours(10,0,0);const e2=new Date(ed);e2.setHours(13,0,0);
   const fmt=d=>d.toISOString().replace(/[-:]/g,'').split('.')[0]+'Z';
-  window.open(`https://calendar.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(`ð ${ev} â ${n}`)}&dates=${fmt(s)}/${fmt(e2)}&details=${encodeURIComponent(desc)}`,'_blank');
-  sCalSt('ok','â × ×¤×ª× Google Calendar!');
+  window.open(`https://calendar.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(`🎈 ${ev} — ${n}`)}&dates=${fmt(s)}/${fmt(e2)}&details=${encodeURIComponent(desc)}`,'_blank');
+  sCalSt('ok','✅ נפתח Google Calendar!');
 }
 function sCalSt(t,m){const el=document.getElementById('QCST');el.className=`st ${t}`;el.textContent=m;el.style.display='block';}
 function qclear(){
   ['QCN','QCP','QED','QDRTXT'].forEach(id=>{const el=document.getElementById(id);if(el)el.value='';});
   document.getElementById('QET').value='';document.getElementById('QDIST').value='0';document.getElementById('QDISC').value='0';
   qIt=[];qLoc=false;document.getElementById('QTGL').style.background='var(--border)';document.getElementById('QTGLD').style.left='3px';document.getElementById('QTGLD').style.right='auto';
-  document.getElementById('QITEMS').innerHTML='×××¥ + ××××¡××£ ×¤×¨××';document.getElementById('QITEMS').style.textAlign='center';
+  document.getElementById('QITEMS').innerHTML='לחץ + להוסיף פריט';document.getElementById('QITEMS').style.textAlign='center';
   document.getElementById('QIST').style.display='none';document.getElementById('QCST').style.display='none';
-  qcalc();toast('ðï¸ × ××§×');
+  qcalc();toast('🗑️ נוקה');
 }
 async function qparse(){
-  const chat=document.getElementById('QCHAT')?.value||'';if(!chat.trim()){toast('â ï¸ ××××§ ×©×××','e');return;}
-  sPSt('ld','<div class="anl"><div class="dots"><span></span><span></span><span></span></div> Gemini ×× ×ª×...</div>');
+  const chat=document.getElementById('QCHAT')?.value||'';if(!chat.trim()){toast('⚠️ הדבק שיחה','e');return;}
+  sPSt('ld','<div class="anl"><div class="dots"><span></span><span></span><span></span></div> Gemini מנתח...</div>');
   document.getElementById('QPD').style.display='none';
-  const ps=Object.entries(PL).map(([k,v])=>`- ${k}: ${v.b}âª${v.l?` (×ª××©×: ${v.l}âª)`:''}`).join('\n');
-  const prompt=`××ª× ×¢×××¨ ×©× ×××©×¢××, ××× ×××× ×× ××××ª ×××××, ××©×¨××.\n\n××××¨××:\n${ps}\n- × ×¡××¢××ª: 1.5âª/×§"× ××× ×××××¨\n- ×ª××©×× ×××ª ×××××: ×× ×× 25%\n\n×§×¨× ××ª ×©×××ª ××××××¡××¤ ××××¥ ××××¢. ××××¨ JSON ××××:\n{"clientName":"","clientPhone":"","eventType":"","eventDate":"YYYY-MM-DD","distanceKm":0,"isLocal":false,"items":[{"name":"×©× ××××××¨××","qty":1}],"notes":""}\n\n×©×××:\n${chat}`;
+  const ps=Object.entries(PL).map(([k,v])=>`- ${k}: ${v.b}₪${v.l?` (תושב: ${v.l}₪)`:''}`).join('\n');
+  const prompt=`אתה עוזר של הושעיה, אמן בלונים מבית חוגלה, ישראל.\n\nמחירון:\n${ps}\n- נסיעות: 1.5₪/ק"מ לוך וחזור\n- תושבי בית חוגלה: הנחה 25%\n\nקרא את שיחת הוואטסאפ וחלץ מידע. החזר JSON בלבד:\n{"clientName":"","clientPhone":"","eventType":"","eventDate":"YYYY-MM-DD","distanceKm":0,"isLocal":false,"items":[{"name":"שם מהמחירון","qty":1}],"notes":""}\n\nשיחה:\n${chat}`;
   try{
     const res=await fetch(`${WORKER_URL}/gemini`,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({contents:[{parts:[{text:prompt}]}],generationConfig:{temperature:0.1,maxOutputTokens:800}})});
     const data=await res.json();
-    if(data.error){sPSt('er',`â ${data.error.message}`);return;}
+    if(data.error){sPSt('er',`❌ ${data.error.message}`);return;}
     const text=data.candidates?.[0]?.content?.parts?.[0]?.text||'';
     const p=JSON.parse(text.replace(/```json|```/g,'').trim());
     p.items=(p.items||[]).map(it=>({id:Date.now()+Math.random(),name:it.name,qty:it.qty||1,price:pfr(it.name,p.isLocal)*(it.qty||1)}));
-    pQ=p;sPSt('ok','â × ××ª×!');rParsed(p);
-  }catch(e){sPSt('er',`â ${e.message}`);}
+    pQ=p;sPSt('ok','✅ נותח!');rParsed(p);
+  }catch(e){sPSt('er',`❌ ${e.message}`);}
 }
 function sPSt(t,m){const el=document.getElementById('QPST');if(t==='ld'){el.className='st ld';el.innerHTML=m;}else{el.className=`st ${t}`;el.textContent=m;}el.style.display='block';}
 function rParsed(p){
   document.getElementById('QPD').style.display='block';let h='';
-  if(p.clientName)h+=`ð¤ <b>×©×:</b> ${p.clientName}<br>`;if(p.clientPhone)h+=`ð <b>×××¤××:</b> ${p.clientPhone}<br>`;
-  if(p.eventType)h+=`ð <b>×××¨××¢:</b> ${p.eventType}<br>`;if(p.eventDate&&p.eventDate!=='×¨××§')h+=`ð <b>×ª××¨××:</b> ${new Date(p.eventDate).toLocaleDateString('he-IL')}<br>`;
-  if(p.distanceKm>0)h+=`ð ${p.distanceKm} ×§"×<br>`;if(p.isLocal)h+=`ðï¸ ×ª××©×/×ª â ×× ×× 25%<br>`;
-  h+='<br>';p.items?.forEach(i=>{h+=`â¢ ${i.name} Ã ${i.qty} â <b style="color:var(--gold)">${i.price}âª</b><br>`;});
+  if(p.clientName)h+=`👤 <b>שם:</b> ${p.clientName}<br>`;if(p.clientPhone)h+=`📞 <b>טלפון:</b> ${p.clientPhone}<br>`;
+  if(p.eventType)h+=`🎉 <b>אירוע:</b> ${p.eventType}<br>`;if(p.eventDate&&p.eventDate!=='ריק')h+=`📅 <b>תאריך:</b> ${new Date(p.eventDate).toLocaleDateString('he-IL')}<br>`;
+  if(p.distanceKm>0)h+=`🚗 ${p.distanceKm} ק"מ<br>`;if(p.isLocal)h+=`🏘️ תושב/ת — הנחה 25%<br>`;
+  h+='<br>';p.items?.forEach(i=>{h+=`• ${i.name} × ${i.qty} — <b style="color:var(--gold)">${i.price}₪</b><br>`;});
   const tot=p.items?.reduce((s,i)=>s+i.price,0)+(p.distanceKm||0)*2*1.5;
-  h+=`<br><span style="color:var(--gold);font-weight:900;font-size:14px">ð° ×¡×"×: ${Math.round(tot)}âª</span>`;
-  if(p.notes)h+=`<br><br>ð ${p.notes}`;
+  h+=`<br><span style="color:var(--gold);font-weight:900;font-size:14px">💰 סה"כ: ${Math.round(tot)}₪</span>`;
+  if(p.notes)h+=`<br><br>📝 ${p.notes}`;
   document.getElementById('QPDTXT').innerHTML=h;
 }
 function qapply(){
   if(!pQ)return;
   if(pQ.clientName)document.getElementById('QCN').value=pQ.clientName;if(pQ.clientPhone)document.getElementById('QCP').value=pQ.clientPhone;
-  if(pQ.eventType)document.getElementById('QET').value=pQ.eventType;if(pQ.eventDate&&pQ.eventDate!=='×¨××§')document.getElementById('QED').value=pQ.eventDate;
+  if(pQ.eventType)document.getElementById('QET').value=pQ.eventType;if(pQ.eventDate&&pQ.eventDate!=='ריק')document.getElementById('QED').value=pQ.eventDate;
   if(pQ.distanceKm)document.getElementById('QDIST').value=pQ.distanceKm;
-  if(pQ.isLocal){qLoc=true;document.getElementById('QTGL').style.background='var(--pur)';document.getElementById('QTGLD').style.left='auto';document.getElementById('QTGLD').style.right='3px';document.getElementById('QDISC').value=25;document.getElementById('QDRTXT').value='×× ××ª ×ª××©×/×ª ×××ª ×××××';}
+  if(pQ.isLocal){qLoc=true;document.getElementById('QTGL').style.background='var(--pur)';document.getElementById('QTGLD').style.left='auto';document.getElementById('QTGLD').style.right='3px';document.getElementById('QDISC').value=25;document.getElementById('QDRTXT').value='הנחת תושב/ת בית חוגלה';}
   qIt=[];const c=document.getElementById('QITEMS');c.innerHTML='';c.style.textAlign='';
-  pQ.items?.forEach(it=>{qIt.push(it);const opts=Object.keys(PL).map(k=>`<option value="${k}"${k===it.name?' selected':''}>${k} â ${PL[k].b}âª</option>`).join('');const row=document.createElement('div');row.className='irow';row.id=`QR${it.id}`;row.innerHTML=`<select style="flex:2;background:transparent;border:none;color:var(--text);font-family:'Heebo',sans-serif;font-size:12px;outline:none;direction:rtl" onchange="qun(${it.id},this.value)"><option value="">×××¨...</option>${opts}</select><input type="number" min="1" value="${it.qty}" style="width:40px;background:transparent;border:none;color:var(--text);text-align:center;font-family:'Heebo',sans-serif;font-size:12px;outline:none" onchange="quq(${it.id},+this.value)"><span id="QP${it.id}" style="color:var(--gold);font-weight:700;font-size:12px;min-width:44px;text-align:left">${it.price}âª</span><button onclick="qrm(${it.id})" style="background:none;border:none;color:var(--red);cursor:pointer;font-size:15px">â</button>`;c.appendChild(row);});
-  sqt(0);qcalc();toast('â ×××¢××¨ ×××¦×¢×!');
+  pQ.items?.forEach(it=>{qIt.push(it);const opts=Object.keys(PL).map(k=>`<option value="${k}"${k===it.name?' selected':''}>${k} — ${PL[k].b}₪</option>`).join('');const row=document.createElement('div');row.className='irow';row.id=`QR${it.id}`;row.innerHTML=`<select style="flex:2;background:transparent;border:none;color:var(--text);font-family:'Heebo',sans-serif;font-size:12px;outline:none;direction:rtl" onchange="qun(${it.id},this.value)"><option value="">בחר...</option>${opts}</select><input type="number" min="1" value="${it.qty}" style="width:40px;background:transparent;border:none;color:var(--text);text-align:center;font-family:'Heebo',sans-serif;font-size:12px;outline:none" onchange="quq(${it.id},+this.value)"><span id="QP${it.id}" style="color:var(--gold);font-weight:700;font-size:12px;min-width:44px;text-align:left">${it.price}₪</span><button onclick="qrm(${it.id})" style="background:none;border:none;color:var(--red);cursor:pointer;font-size:15px">✕</button>`;c.appendChild(row);});
+  sqt(0);qcalc();toast('✅ הועבר להצעה!');
 }
 function saveHist(){try{localStorage.setItem('hqh3',JSON.stringify(qHist));}catch(e){}}
 function loadHist(){try{const s=localStorage.getItem('hqh3');if(s)qHist=JSON.parse(s);}catch(e){}}
-function clearHist(){if(confirm('×××××§ ×××?')){qHist=[];saveHist();rHist();}}
+function clearHist(){if(confirm('למחוק הכל?')){qHist=[];saveHist();rHist();}}
 function rHist(){
   const el=document.getElementById('QHIST');
-  if(!qHist.length){el.innerHTML='<div style="text-align:center;color:var(--muted);padding:40px;font-size:13px">××× ×××¡×××¨×× ×¢××××</div>';return;}
-  el.innerHTML=qHist.map((h,i)=>`<div class="hist-item" onclick="loadFromHist(${i})"><div style="display:flex;justify-content:space-between;align-items:center"><b style="font-size:14px">${h.name}</b><div style="display:flex;align-items:center;gap:8px"><span style="color:var(--gold);font-weight:900;font-size:15px">${h.total}âª</span><button onclick="event.stopPropagation();delHist(${i})" style="background:none;border:none;color:var(--muted);cursor:pointer;font-size:13px">â</button></div></div><div style="color:var(--muted);font-size:11px;margin-top:4px">${h.evt||'×××¨××¢'} Â· ${h.date}</div></div>`).join('');
+  if(!qHist.length){el.innerHTML='<div style="text-align:center;color:var(--muted);padding:40px;font-size:13px">אין היסטוריה עדיין</div>';return;}
+  el.innerHTML=qHist.map((h,i)=>`<div class="hist-item" onclick="loadFromHist(${i})"><div style="display:flex;justify-content:space-between;align-items:center"><b style="font-size:14px">${h.name}</b><div style="display:flex;align-items:center;gap:8px"><span style="color:var(--gold);font-weight:900;font-size:15px">${h.total}₪</span><button onclick="event.stopPropagation();delHist(${i})" style="background:none;border:none;color:var(--muted);cursor:pointer;font-size:13px">✕</button></div></div><div style="color:var(--muted);font-size:11px;margin-top:4px">${h.evt||'אירוע'} · ${h.date}</div></div>`).join('');
 }
 function loadFromHist(i){const h=qHist[i];if(!h)return;pQ={clientName:h.name,clientPhone:'',eventType:h.evt,eventDate:'',distanceKm:0,isLocal:false,items:h.items||[]};qapply();}
 function delHist(i){qHist.splice(i,1);saveHist();rHist();}
 
-// ââââââââââââââââââââââââââââââââââââ
-// ââ INVENTORY ââ
-// ââââââââââââââââââââââââââââââââââââ
-let items=[],filterTypeVal='×××',searchVal='',lowOnly=false,openItem=null;
+// ════════════════════════════════════
+// ── INVENTORY ──
+// ════════════════════════════════════
+let items=[],filterTypeVal='הכל',searchVal='',lowOnly=false,openItem=null;
 
 function saveInv(){localStorage.setItem('hoshi_inv4',JSON.stringify(items));updateStats();}
 function loadInv(){
@@ -583,18 +583,18 @@ function loadInv(){
 }
 function loadDefaults(){
   const t=[
-    {type:'×××§×¡',size:'5"',color:'×××',min:30},{type:'×××§×¡',size:'5"',color:'×©×××¨',min:20},{type:'×××§×¡',size:'5"',color:'××¨××',min:20},{type:'×××§×¡',size:'5"',color:'××××',min:20},{type:'×××§×¡',size:'5"',color:'×××',min:20},
-    {type:'×××§×¡',size:'12"',color:'×××',min:50},{type:'×××§×¡',size:'12"',color:'×©×××¨',min:50},{type:'×××§×¡',size:'12"',color:'××¨××',min:50},{type:'×××§×¡',size:'12"',color:'××××',min:50},{type:'×××§×¡',size:'12"',color:'×××',min:50},{type:'×××§×¡',size:'12"',color:'××¡×£',min:30},{type:'×××§×¡',size:'12"',color:'××××',min:40},{type:'×××§×¡',size:'12"',color:'×¡×××',min:30},{type:'×××§×¡',size:'12"',color:'××¨××§',min:30},{type:'×××§×¡',size:'12"',color:'××ª××',min:20},{type:'×××§×¡',size:'12"',color:'×ª×××ª',min:30},{type:'×××§×¡',size:'12"',color:'×©×× ×ª',min:30},
-    {type:'×××§×¡',size:'14"',color:'×××',min:20},{type:'×××§×¡',size:'14"',color:'×©×××¨',min:20},{type:'×××§×¡',size:'14"',color:'××¨××',min:15},{type:'×××§×¡',size:'14"',color:'××××',min:15},{type:'×××§×¡',size:'14"',color:'×××',min:15},
-    {type:'×××××¨',size:'×× 18"',color:'××¨××',min:8},{type:'×××××¨',size:'×× 18"',color:'××××',min:8},{type:'×××××¨',size:'×× 18"',color:'××××',min:5},{type:'×××××¨',size:'×× 18"',color:'×××',min:5},{type:'×××××¨',size:'×× 18"',color:'××¡×£',min:5},{type:'×××××¨',size:'×× 18"',color:'×××',min:5},
-    {type:'×××××¨',size:'×¢××× 22"',color:'×××',min:5},{type:'×××××¨',size:'×¢××× 22"',color:'××¡×£',min:5},{type:'×××××¨',size:'×¢××× 22"',color:'×©×××¨',min:3},{type:'×××××¨',size:'×¢××× 22"',color:'××¨××',min:3},
-    {type:'×××××¨',size:'×¢××× 32"',color:'×××',min:4},{type:'×××××¨',size:'×¢××× 32"',color:'××¡×£',min:4},{type:'×××××¨',size:'×¢××× 32"',color:'×©×××¨',min:3},
-    ...[0,1,2,3,4,5,6,7,8,9].flatMap(n=>[{type:'×××××¨',size:'××¡×¤×¨',color:`${n} ×××`,min:4},{type:'×××××¨',size:'××¡×¤×¨',color:`${n} ××¡×£`,min:3}]),
+    {type:'לטקס',size:'5"',color:'לבן',min:30},{type:'לטקס',size:'5"',color:'שחור',min:20},{type:'לטקס',size:'5"',color:'ורוד',min:20},{type:'לטקס',size:'5"',color:'כחול',min:20},{type:'לטקס',size:'5"',color:'זהב',min:20},
+    {type:'לטקס',size:'12"',color:'לבן',min:50},{type:'לטקס',size:'12"',color:'שחור',min:50},{type:'לטקס',size:'12"',color:'ורוד',min:50},{type:'לטקס',size:'12"',color:'כחול',min:50},{type:'לטקס',size:'12"',color:'זהב',min:50},{type:'לטקס',size:'12"',color:'כסף',min:30},{type:'לטקס',size:'12"',color:'אדום',min:40},{type:'לטקס',size:'12"',color:'סגול',min:30},{type:'לטקס',size:'12"',color:'ירוק',min:30},{type:'לטקס',size:'12"',color:'כתום',min:20},{type:'לטקס',size:'12"',color:'תכלת',min:30},{type:'לטקס',size:'12"',color:'שמנת',min:30},
+    {type:'לטקס',size:'14"',color:'לבן',min:20},{type:'לטקס',size:'14"',color:'שחור',min:20},{type:'לטקס',size:'14"',color:'ורוד',min:15},{type:'לטקס',size:'14"',color:'כחול',min:15},{type:'לטקס',size:'14"',color:'זהב',min:15},
+    {type:'מיילר',size:'לב 18"',color:'ורוד',min:8},{type:'מיילר',size:'לב 18"',color:'אדום',min:8},{type:'מיילר',size:'לב 18"',color:'כחול',min:5},{type:'מיילר',size:'לב 18"',color:'זהב',min:5},{type:'מיילר',size:'לב 18"',color:'כסף',min:5},{type:'מיילר',size:'לב 18"',color:'לבן',min:5},
+    {type:'מיילר',size:'עגול 22"',color:'זהב',min:5},{type:'מיילר',size:'עגול 22"',color:'כסף',min:5},{type:'מיילר',size:'עגול 22"',color:'שחור',min:3},{type:'מיילר',size:'עגול 22"',color:'ורוד',min:3},
+    {type:'מיילר',size:'עגול 32"',color:'זהב',min:4},{type:'מיילר',size:'עגול 32"',color:'כסף',min:4},{type:'מיילר',size:'עגול 32"',color:'שחור',min:3},
+    ...[0,1,2,3,4,5,6,7,8,9].flatMap(n=>[{type:'מיילר',size:'מספר',color:`${n} זהב`,min:4},{type:'מיילר',size:'מספר',color:`${n} כסף`,min:3}]),
   ];
   items=t.map((x,i)=>({id:i+1,name:`${x.type} ${x.color} ${x.size}`,type:x.type,size:x.size,color:x.color,qty:0,min:x.min}));
   saveInv();
 }
-function buildName(t,s,c){return s==='×××'||!s?`${t} ${c}`:`${t} ${c} ${s}`;}
+function buildName(t,s,c){return s==='ללא'||!s?`${t} ${c}`:`${t} ${c} ${s}`;}
 function updateStats(){
   const m=items.filter(i=>i.qty<i.min).length;
   document.getElementById('STOTAL').textContent=items.length;
@@ -603,15 +603,15 @@ function updateStats(){
 }
 function renderInv(){
   let fl=items;
-  if(filterTypeVal!=='×××')fl=fl.filter(i=>i.type===filterTypeVal);
+  if(filterTypeVal!=='הכל')fl=fl.filter(i=>i.type===filterTypeVal);
   if(lowOnly)fl=fl.filter(i=>i.qty<i.min);
   if(searchVal){const q=searchVal.toLowerCase();fl=fl.filter(i=>i.name.toLowerCase().includes(q)||i.color?.toLowerCase().includes(q)||i.size?.toLowerCase().includes(q));}
   const c=document.getElementById('INV_CONTENT');
-  if(!fl.length){c.innerHTML=`<div class="empty-state"><div class="ei">${searchVal?'ð':'ð¦'}</div><p>${searchVal?'×× × ××¦×':'××××× ×¨××§'}<br>${!items.length?'×××¥ ××××× ×× ï¼':''}</p><button onclick="openAdd()" style="margin-top:14px;background:var(--blue);border:none;color:#fff;padding:10px 22px;border-radius:10px;font-family:'Heebo',sans-serif;font-size:13px;font-weight:700;cursor:pointer">ï¼ ×××¡×£ ×¤×¨××</button></div>`;return;}
+  if(!fl.length){c.innerHTML=`<div class="empty-state"><div class="ei">${searchVal?'🔍':'📦'}</div><p>${searchVal?'לא נמצא':'המלאי ריק'}<br>${!items.length?'לחץ ייבוא או ＋':''}</p><button onclick="openAdd()" style="margin-top:14px;background:var(--blue);border:none;color:#fff;padding:10px 22px;border-radius:10px;font-family:'Heebo',sans-serif;font-size:13px;font-weight:700;cursor:pointer">＋ הוסף פריט</button></div>`;return;}
   const groups={};
-  fl.forEach(item=>{const k=item.type||'×××¨';if(!groups[k])groups[k]={};const s=item.size||'×××';if(!groups[k][s])groups[k][s]=[];groups[k][s].push(item);});
-  const tyOrder=['×××§×¡','×××××¨','×¦××¨××ª','×××¨'];
-  const tyIcons={'×××§×¡':'ð','×××××¨':'â¨','×¦××¨××ª':'ð¶','×××¨':'ð¦'};
+  fl.forEach(item=>{const k=item.type||'אחר';if(!groups[k])groups[k]={};const s=item.size||'ללא';if(!groups[k][s])groups[k][s]=[];groups[k][s].push(item);});
+  const tyOrder=['לטקס','מיילר','צורות','אחר'];
+  const tyIcons={'לטקס':'🎈','מיילר':'✨','צורות':'🐶','אחר':'📦'};
   let html='';
   tyOrder.forEach(type=>{
     if(!groups[type])return;
@@ -620,7 +620,7 @@ function renderInv(){
     sizes.forEach(size=>{html+=`<div class="size-group"><div class="size-label">${size}</div>`;groups[type][size].forEach(item=>{html+=invItemHTML(item);});html+=`</div>`;});
     html+=`</div>`;
   });
-  Object.keys(groups).forEach(type=>{if(tyOrder.includes(type))return;html+=`<div class="cat-block"><div class="cat-title">ð¦ ${type}</div>`;Object.values(groups[type]).flat().forEach(item=>{html+=invItemHTML(item);});html+=`</div>`;});
+  Object.keys(groups).forEach(type=>{if(tyOrder.includes(type))return;html+=`<div class="cat-block"><div class="cat-title">📦 ${type}</div>`;Object.values(groups[type]).flat().forEach(item=>{html+=invItemHTML(item);});html+=`</div>`;});
   c.innerHTML=html;
 }
 function invItemHTML(item){
@@ -634,14 +634,14 @@ function invItemHTML(item){
     <div class="item-top">
       <div class="item-name">${nameHl}</div>
       <div class="item-controls" onclick="event.stopPropagation()">
-        <button class="ctrl-btn" onclick="adj(${item.id},-1)">â</button>
+        <button class="ctrl-btn" onclick="adj(${item.id},-1)">−</button>
         <span class="qty-display ${qClass}">${item.qty}</span>
-        <button class="ctrl-btn" onclick="adj(${item.id},1)">ï¼</button>
-        <button onclick="openEdit(${item.id})" style="background:transparent;border:none;color:var(--muted);cursor:pointer;font-size:13px;padding:4px">âï¸</button>
+        <button class="ctrl-btn" onclick="adj(${item.id},1)">＋</button>
+        <button onclick="openEdit(${item.id})" style="background:transparent;border:none;color:var(--muted);cursor:pointer;font-size:13px;padding:4px">✏️</button>
       </div>
     </div>
     <div class="item-bar"><div class="item-bar-fill" style="width:${pct}%;background:${barCol}"></div></div>
-    <div class="item-min">${item.qty<item.min?`â ï¸ ××¡×¨ ${item.min-item.qty} ×××³`:`â ×ª×§××`} | ××× ×³ ${item.min}</div>
+    <div class="item-min">${item.qty<item.min?`⚠️ חסר ${item.min-item.qty} יח׳`:`✓ תקין`} | מינ׳ ${item.min}</div>
     <div class="quick-take">
       <button class="qt-btn" onclick="event.stopPropagation();quickTake(${item.id},1)">-1</button>
       <button class="qt-btn" onclick="event.stopPropagation();quickTake(${item.id},2)">-2</button>
@@ -652,13 +652,13 @@ function invItemHTML(item){
 }
 function toggleInvItem(id){openItem=openItem===id?null:id;renderInv();}
 function adj(id,d){const i=items.find(x=>x.id===id);if(i){i.qty=Math.max(0,i.qty+d);saveInv();renderInv();}}
-function quickTake(id,n){const i=items.find(x=>x.id===id);if(i){i.qty=Math.max(0,i.qty-n);saveInv();renderInv();toast(`ð¦ × ×©××¨ ${i.qty}`,i.qty<i.min?'w':'');}}
+function quickTake(id,n){const i=items.find(x=>x.id===id);if(i){i.qty=Math.max(0,i.qty-n);saveInv();renderInv();toast(`📦 נשאר ${i.qty}`,i.qty<i.min?'w':'');}}
 function filterType(type,btn){filterTypeVal=type;document.querySelectorAll('.itab').forEach(t=>t.classList.remove('on'));btn.classList.add('on');renderInv();}
 function onSearch(v){searchVal=v;openItem=null;renderInv();}
 function toggleLowOnly(){lowOnly=!lowOnly;document.getElementById('FLTBTN').classList.toggle('on',lowOnly);renderInv();}
 function openAdd(){
-  document.getElementById('ADD_TTL').textContent='â ×××¡×£ ×¤×¨××';document.getElementById('EDIT_ID').value='';
-  document.getElementById('ADD_NAME').value='';document.getElementById('ADD_TYPE').value='×××§×¡';
+  document.getElementById('ADD_TTL').textContent='➕ הוסף פריט';document.getElementById('EDIT_ID').value='';
+  document.getElementById('ADD_NAME').value='';document.getElementById('ADD_TYPE').value='לטקס';
   document.getElementById('ADD_SIZE').value='12"';document.getElementById('ADD_COLOR').value='';
   document.getElementById('ADD_QTY').value='0';document.getElementById('ADD_MIN').value='10';
   document.getElementById('DEL_BTN').style.display='none';
@@ -666,8 +666,8 @@ function openAdd(){
 }
 function openEdit(id){
   const item=items.find(i=>i.id===id);if(!item)return;
-  document.getElementById('ADD_TTL').textContent='âï¸ ×¢×¨×× ×¤×¨××';document.getElementById('EDIT_ID').value=id;
-  document.getElementById('ADD_NAME').value=item.name;document.getElementById('ADD_TYPE').value=item.type||'×××§×¡';
+  document.getElementById('ADD_TTL').textContent='✏️ ערוך פריט';document.getElementById('EDIT_ID').value=id;
+  document.getElementById('ADD_NAME').value=item.name;document.getElementById('ADD_TYPE').value=item.type||'לטקס';
   document.getElementById('ADD_SIZE').value=item.size||'12"';document.getElementById('ADD_COLOR').value=item.color||'';
   document.getElementById('ADD_QTY').value=item.qty;document.getElementById('ADD_MIN').value=item.min;
   document.getElementById('DEL_BTN').style.display='block';
@@ -681,59 +681,59 @@ function saveItem(){
   const color=document.getElementById('ADD_COLOR').value.trim();
   const qty=+(document.getElementById('ADD_QTY').value)||0;
   const min=+(document.getElementById('ADD_MIN').value)||0;
-  if(!name&&!color){toast('â ï¸ × × ×××× ×©×','e');return;}
+  if(!name&&!color){toast('⚠️ נא למלא שם','e');return;}
   const finalName=name||buildName(type,size,color);
   if(id){const item=items.find(i=>i.id==id);if(item){item.name=finalName;item.type=type;item.size=size;item.color=color;item.qty=qty;item.min=min;}}
   else items.push({id:Date.now(),name:finalName,type,size,color,qty,min});
-  saveInv();renderInv();closeAdd();toast(id?'â ×¢××××':'â × ××¡×£');
+  saveInv();renderInv();closeAdd();toast(id?'✅ עודכן':'✅ נוסף');
 }
-function deleteItem(){const id=document.getElementById('EDIT_ID').value;if(!id)return;if(!confirm('×××××§?'))return;items=items.filter(i=>i.id!=id);saveInv();renderInv();closeAdd();toast('ðï¸ × ×××§');}
+function deleteItem(){const id=document.getElementById('EDIT_ID').value;if(!id)return;if(!confirm('למחוק?'))return;items=items.filter(i=>i.id!=id);saveInv();renderInv();closeAdd();toast('🗑️ נמחק');}
 function closeAdd(){document.getElementById('ADD_OV').classList.remove('open');}
 function openImport(){document.getElementById('IMP_TEXT').value='';document.getElementById('IMP_OV').classList.add('open');}
 function closeImport(){document.getElementById('IMP_OV').classList.remove('open');}
 function handleFile(input){const file=input.files[0];if(!file)return;const r=new FileReader();r.onload=e=>{document.getElementById('IMP_TEXT').value=e.target.result;};r.readAsText(file,'utf-8');}
 function importList(){
-  const text=document.getElementById('IMP_TEXT').value.trim();if(!text){toast('â ï¸ ××××§ ×¨×©×××','e');return;}
-  const parsed=parseList(text);if(!parsed.length){toast('â ï¸ ×× ×××× ×¤×¨××××','e');return;}
+  const text=document.getElementById('IMP_TEXT').value.trim();if(!text){toast('⚠️ הדבק רשימה','e');return;}
+  const parsed=parseList(text);if(!parsed.length){toast('⚠️ לא זוהו פריטים','e');return;}
   let added=0;
   parsed.forEach(p=>{const ex=items.find(i=>i.name.toLowerCase()===p.name.toLowerCase());if(ex)ex.qty=p.qty;else{items.push({id:Date.now()+Math.random(),...p});added++;}});
-  saveInv();renderInv();closeImport();toast(`â ××××× ${parsed.length} (${added} ×××©××)`);
+  saveInv();renderInv();closeImport();toast(`✅ יובאו ${parsed.length} (${added} חדשים)`);
 }
 function parseList(text){
   return text.split('\n').filter(l=>l.trim()).map(line=>{
-    line=line.trim().replace(/^[â¢\-\*]\s*/,'');
+    line=line.trim().replace(/^[•\-\*]\s*/,'');
     let qty=0,min=10;
-    const qm=line.match(/[â\-xÃ]\s*(\d+)|(\d+)\s*××|(\d+)\s*$|x(\d+)/i);
+    const qm=line.match(/[—\-x×]\s*(\d+)|(\d+)\s*יח|(\d+)\s*$|x(\d+)/i);
     if(qm){qty=+(qm[1]||qm[2]||qm[3]||qm[4]||0);line=line.replace(qm[0],'').trim();}
-    let type='×××¨';
-    if(/×××××¨|foil|mylar/i.test(line))type='×××××¨';
-    else if(/×××§×¡|latex/i.test(line))type='×××§×¡';
-    else if(/×¦××¨×|×××|×¤×¨×|animal|shape/i.test(line))type='×¦××¨××ª';
-    let size='×××';
-    const sm=line.match(/(\d+)\s*["×´\']/);
-    if(sm)size=sm[0].trim();else if(/××/i.test(line))size='×× 18"';else if(/×¢×××.*32|32.*×¢×××/i.test(line))size='×¢××× 32"';else if(/×¢×××.*22|22.*×¢×××/i.test(line))size='×¢××× 22"';else if(/××¡×¤×¨|\d+\s+[××]/i.test(line))size='××¡×¤×¨';
-    const colors=['×××','×©×××¨','××¨××','××××','××××','×××','××¡×£','×¡×××','××¨××§','××ª××','×ª×××ª','×©×× ×ª'];
+    let type='אחר';
+    if(/מיילר|foil|mylar/i.test(line))type='מיילר';
+    else if(/לטקס|latex/i.test(line))type='לטקס';
+    else if(/צורה|חיה|פרח|animal|shape/i.test(line))type='צורות';
+    let size='ללא';
+    const sm=line.match(/(\d+)\s*["״\']/);
+    if(sm)size=sm[0].trim();else if(/לב/i.test(line))size='לב 18"';else if(/עגול.*32|32.*עגול/i.test(line))size='עגול 32"';else if(/עגול.*22|22.*עגול/i.test(line))size='עגול 22"';else if(/מספר|\d+\s+[זכ]/i.test(line))size='מספר';
+    const colors=['לבן','שחור','ורוד','כחול','אדום','זהב','כסף','סגול','ירוק','כתום','תכלת','שמנת'];
     let color='';colors.forEach(c=>{if(line.toLowerCase().includes(c.toLowerCase()))color=c;});
-    if(type==='×××§×¡'){min=size==='12"'?50:size==='5"'?30:20;}else if(type==='×××××¨'){min=size.includes('××¡×¤×¨')?4:8;}
+    if(type==='לטקס'){min=size==='12"'?50:size==='5"'?30:20;}else if(type==='מיילר'){min=size.includes('מספר')?4:8;}
     return{name:line.replace(/\s+/g,' ').trim(),type,size,color,qty,min};
   }).filter(p=>p.name);
 }
 function openMissing(){
   const missing=items.filter(i=>i.qty<i.min).sort((a,b)=>(a.min-a.qty)-(b.min-b.qty));
   const el=document.getElementById('MISS_LIST');
-  if(!missing.length){el.innerHTML='<div style="text-align:center;padding:28px;color:var(--green);font-size:14px;font-weight:700">â ××× ×××¡×¨××!</div>';}
-  else{el.innerHTML=missing.map(item=>`<div class="missing-item"><div><div style="font-size:13px;font-weight:700">${item.name}</div><div style="font-size:11px;color:var(--muted);margin-top:2px">××©: ${item.qty} | ××× ×³: ${item.min}</div></div><div style="font-size:13px;color:var(--red);font-weight:700">××¡×¨ ${item.min-item.qty}</div></div>`).join('');}
+  if(!missing.length){el.innerHTML='<div style="text-align:center;padding:28px;color:var(--green);font-size:14px;font-weight:700">✅ אין חוסרים!</div>';}
+  else{el.innerHTML=missing.map(item=>`<div class="missing-item"><div><div style="font-size:13px;font-weight:700">${item.name}</div><div style="font-size:11px;color:var(--muted);margin-top:2px">יש: ${item.qty} | מינ׳: ${item.min}</div></div><div style="font-size:13px;color:var(--red);font-weight:700">חסר ${item.min-item.qty}</div></div>`).join('');}
   document.getElementById('MISS_OV').classList.add('open');
 }
 function closeMissing(){document.getElementById('MISS_OV').classList.remove('open');}
 function copyMissing(){
-  const missing=items.filter(i=>i.qty<i.min);if(!missing.length){toast('â ××× ×××¡×¨××!');return;}
-  const txt=`ð¦ ×¨×©×××ª ×§× ×××ª â ${new Date().toLocaleDateString('he-IL')}\n\n${missing.map(i=>`â¢ ${i.name} â ${i.min-i.qty} ×××³ (××© ${i.qty})`).join('\n')}\n\n×××©×¢×× | 050-5918734`;
-  navigator.clipboard.writeText(txt).then(()=>toast(`ð ×××¢×ª×§× ${missing.length} ×¤×¨××××`));
+  const missing=items.filter(i=>i.qty<i.min);if(!missing.length){toast('✅ אין חוסרים!');return;}
+  const txt=`📦 רשימת קניות — ${new Date().toLocaleDateString('he-IL')}\n\n${missing.map(i=>`• ${i.name} — ${i.min-i.qty} יח׳ (יש ${i.qty})`).join('\n')}\n\nהושעיה | 050-5918734`;
+  navigator.clipboard.writeText(txt).then(()=>toast(`📋 הועתקו ${missing.length} פריטים`));
 }
 function exportWA(){
-  const missing=items.filter(i=>i.qty<i.min);if(!missing.length){toast('â ××× ×××¡×¨××');return;}
-  const txt=`×©×××,\n\n×¨×©×××ª ×××× × ${new Date().toLocaleDateString('he-IL')}:\n\n${missing.map(i=>`â¢ ${i.name} â ${i.min-i.qty} ×××³`).join('\n')}\n\n×ª×××!\n×××©×¢×× 050-5918734`;
+  const missing=items.filter(i=>i.qty<i.min);if(!missing.length){toast('✅ אין חוסרים');return;}
+  const txt=`שלום,\n\nרשימת הזמנה ${new Date().toLocaleDateString('he-IL')}:\n\n${missing.map(i=>`• ${i.name} — ${i.min-i.qty} יח׳`).join('\n')}\n\nתודה!\nהושעיה 050-5918734`;
   window.open(`https://wa.me/?text=${encodeURIComponent(txt)}`,'_blank');
 }
 function openQuickTake(){document.getElementById('QT_SRCH').value='';qtSearch('');document.getElementById('QT_OV').classList.add('open');}
@@ -741,14 +741,14 @@ function closeQT(){document.getElementById('QT_OV').classList.remove('open');}
 function qtSearch(q){
   const list=document.getElementById('QT_LIST');
   let fl=items;if(q)fl=fl.filter(i=>i.name.toLowerCase().includes(q.toLowerCase())||i.color?.toLowerCase().includes(q.toLowerCase()));
-  if(!fl.length){list.innerHTML='<div style="text-align:center;padding:20px;color:var(--muted);font-size:13px">×× × ××¦×</div>';return;}
+  if(!fl.length){list.innerHTML='<div style="text-align:center;padding:20px;color:var(--muted);font-size:13px">לא נמצא</div>';return;}
   list.innerHTML=fl.slice(0,30).map(item=>`<div style="background:var(--card);border:1px solid var(--border);border-radius:10px;padding:10px 12px;margin-bottom:6px"><div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:7px"><div style="font-size:13px;font-weight:700">${item.name}</div><span style="font-size:14px;font-weight:900;color:${item.qty<item.min?'var(--orange)':'var(--green)'}">${item.qty}</span></div><div style="display:flex;gap:5px">${[1,2,3,5,10].map(n=>`<button onclick="qtTake(${item.id},${n})" style="flex:1;padding:8px 2px;background:var(--card2);border:1px solid var(--border);border-radius:7px;color:var(--text);font-family:'Heebo',sans-serif;font-size:12px;font-weight:700;cursor:pointer">-${n}</button>`).join('')}</div></div>`).join('');
 }
-function qtTake(id,n){const i=items.find(x=>x.id===id);if(!i)return;i.qty=Math.max(0,i.qty-n);saveInv();renderInv();qtSearch(document.getElementById('QT_SRCH').value);toast(`ð¦ × ×©××¨ ${i.qty}`,i.qty<i.min?'w':'');}
+function qtTake(id,n){const i=items.find(x=>x.id===id);if(!i)return;i.qty=Math.max(0,i.qty-n);saveInv();renderInv();qtSearch(document.getElementById('QT_SRCH').value);toast(`📦 נשאר ${i.qty}`,i.qty<i.min?'w':'');}
 
-// ââââââââââââââââââââââââââââââââââââ
+// ════════════════════════════════════
 // INIT
-// ââââââââââââââââââââââââââââââââââââ
+// ════════════════════════════════════
 loadHist();
 loadInv();
 qcalc();
