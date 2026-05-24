@@ -577,8 +577,10 @@ function delHist(i){qHist.splice(i,1);saveHist();rHist();}
 let items=[],filterTypeVal='הכל',searchVal='',lowOnly=false,openItem=null;
 
 function saveInv(){localStorage.setItem('hoshi_inv4',JSON.stringify(items));updateStats();}
+function fixMojibake(v){if(typeof v!=='string'||(!v.includes('\u00d7')&&!v.includes('\u00a9')&&!v.includes('\u00a2')))return v;try{const b=new Uint8Array(v.length);for(let i=0;i<v.length;i++)b[i]=v.charCodeAt(i)&0xFF;return new TextDecoder('utf-8').decode(b);}catch(e){return v;}}
+function fixObj(o){if(Array.isArray(o))return o.map(fixObj);if(o&&typeof o==='object'){const r={};for(const[k,v]of Object.entries(o))r[k]=fixObj(v);return r;}return fixMojibake(o);}
 function loadInv(){
-  try{const s=localStorage.getItem('hoshi_inv4');if(s){items=JSON.parse(s);return;}}catch(e){}
+  try{const s=localStorage.getItem('hoshi_inv4');if(s){const parsed=JSON.parse(s);const fixed=fixObj(parsed);const needsFix=JSON.stringify(fixed)!==JSON.stringify(parsed);if(needsFix){localStorage.setItem('hoshi_inv4',JSON.stringify(fixed));}items=fixed;return;}}catch(e){}
   loadDefaults();
 }
 function loadDefaults(){
